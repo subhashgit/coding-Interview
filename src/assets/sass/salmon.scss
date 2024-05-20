@@ -46,3 +46,114 @@
         }
     }
 }
+.cs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+#Salmon {
+
+        ul{
+    margin-left: 0px;
+
+            li{
+            position:relative;
+                list-style:none;
+                padding-left: 20px;
+            }
+        li:after{
+            content:'';
+            height: 7px;
+            width: 7px;
+            position: absolute;
+            left: 0;
+            top: 14px;
+            background: #049A4B;
+            border-radius: 10px;
+                 }
+
+        
+    }
+}
+
+#our-services{
+    .cs-container{
+
+    background-color: #25082D;
+    
+    border-radius: 30px;
+        background-position: right;
+    background-repeat: no-repeat;
+    .cs-title{
+        color: #fff;
+    }
+    .cs-text{
+            color: #fff;
+
+   
+    }
+}
+.text-content{padding: 30px 20px;    }
+.image-group{margin: 0 0 0 auto;}
+}
+
+#price-section{
+    padding-top:0 ;
+    .cs-wrap{
+        background: #D9D9D9;
+         padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        border-radius: 10px;
+
+        .price-wrap{
+            background: #fff;
+            padding:30px 15px;
+            border-radius: 10px;
+            h6{
+                font-size: 18px;
+                color: #145FA4;
+            }
+            h4{
+                color: #049A4B;
+                font-size: 35px;
+                font-family: "Made Soulmaze", "Trebuchet MS", sans-serif;
+    font-weight: 400;
+    span{
+         font-size: 18px;
+                font-family: "Quicksand", "Trebuchet MS", sans-serif;
+                color: #353535;
+
+    }
+            }
+            h4.br{color: #25082D;}
+
+        }
+        .popular{
+            background: #25082D;
+           h6,h4,p{color: #fff;span{color: #fff;
+
+           }
+       }
+        
+       }
+    
+    }
+    .cs-title{text-align: center;}
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+     .cs-container {
+        flex-direction: row;
+    }
+   #price-section    .cs-wrap {
+            flex-direction: row;
+            gap: 2rem;
+        }
+}
